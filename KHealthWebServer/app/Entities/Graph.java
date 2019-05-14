@@ -5,7 +5,9 @@ import java.util.HashMap;
 public class Graph {
 
     private int root;
+
     private HashMap<Integer, Vertex> vertices;
+
     private HashMap<Integer, HashMap<String, Integer>> edges;
 
     public Graph(int root, HashMap<Integer,Vertex> vertices, HashMap<Integer, HashMap<String,Integer>> edges){

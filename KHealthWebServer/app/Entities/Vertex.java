@@ -4,9 +4,9 @@ import java.util.List;
 
 public class Vertex {
 
-    public String text;
-    public boolean multi;
-    public List<String> options;
+    private String text;
+    private boolean multi;
+    private List<String> options;
 
     public Vertex(String text, boolean multi, List<String> options){
         this.text = text;

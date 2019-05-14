@@ -8,7 +8,7 @@
       "a": "3"
     },
     "3": {
-      "No medication": "7",
+      "No Medication": "7",
       "Non-insulin Medication": "6",
       "Insulin Medication": "4"
     },
@@ -65,9 +65,9 @@
     "3": {
       "text": "What kind of treatment do you take for diabetes?",
       "options": [
-        "No medication",
-        "Non-insulin medication",
-        "Insulin medication"
+        "No Medication",
+        "Non-insulin Medication",
+        "Insulin Medication"
       ],
       "multi": true
     },

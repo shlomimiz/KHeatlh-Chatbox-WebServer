@@ -7,17 +7,28 @@ import com.google.inject.Singleton;
 
 import java.io.*;
 import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 
 @Singleton
 public class GraphLoader implements Runnable  {
 
-    private static Graph graph;
+    private static Graph instance = null;
+
     private Gson g;
+
+    private static Future GraphLoadingProcess;
+
+    public static Graph getInstance() {
+
+        while(!GraphLoadingProcess.isDone()) {}
+
+        return instance;
+    }
 
     @Inject
     public GraphLoader()  {
 
-        Executors.newSingleThreadExecutor().submit(this);
+        GraphLoadingProcess =  Executors.newSingleThreadExecutor().submit(this);
     }
 
     @Override
@@ -27,14 +38,11 @@ public class GraphLoader implements Runnable  {
 
         try (JsonReader reader = new JsonReader(new FileReader("conf/graph.json"))) {
 
-            graph = g.fromJson(reader, Graph.class);
+            instance = g.fromJson(reader, Graph.class);
 
         } catch (IOException ex) {
             ex.printStackTrace();
         }
     }
 
-    public static Graph getGraph() {
-        return graph;
-    }
 }
