@@ -1,0 +1,143 @@
+{
+  "root": "1",
+  "edges": {
+    "1": {
+      "a": "2"
+    },
+    "2": {
+      "a": "3"
+    },
+    "3": {
+      "No medication": "7",
+      "Non-insulin Medication": "6",
+      "Insulin Medication": "4"
+    },
+    "4": {
+      "a": "5"
+    },
+    "5": {
+      "a": "7"
+    },
+    "6": {
+      "a": "7"
+    },
+    "7": {
+      "Diabetic Neuropathy": "8",
+      "Cardimyopathy": "11",
+      "Other": "12"
+    },
+    "8": {
+      "Diabetic Retinopathy": "10",
+      "yes": "9",
+      "no": "12"
+    },
+    "9": {
+      "no": "12",
+      "yes": "13"
+    },
+    "10": {
+      "a": "12"
+    },
+    "11": {
+      "a": "12"
+    },
+    "12": {
+      "a": "13"
+    },
+    "13": {
+      "a": "14"
+    },
+    "20": {
+      "a": "15"
+    }
+  },
+  "vertices": {
+    "1": {
+      "text": "When were you diagnosed with type 2 diabetes?",
+      "options": [],
+      "multi": false
+    },
+    "2": {
+      "text": "What kind of doctor diagnosed your diabetes?",
+      "options": [],
+      "multi": false
+    },
+    "3": {
+      "text": "What kind of treatment do you take for diabetes?",
+      "options": [
+        "No medication",
+        "Non-insulin medication",
+        "Insulin medication"
+      ],
+      "multi": true
+    },
+    "4": {
+      "text": "Which insulin medication do you take?",
+      "options": [],
+      "multi": false
+    },
+    "5": {
+      "text": "What is the frequency of your hypoglycemic episodes?",
+      "options": [],
+      "multi": false
+    },
+    "6": {
+      "text": "What non-insulin medication do you take?",
+      "options": [],
+      "multi": false
+    },
+    "7": {
+      "text": "Do you suffer from any of the following complications of diabetes?",
+      "options": [
+        "Diabetic Neuropathy",
+        "Diabetic Retinopathy",
+        "Cardimyopathy",
+        "Other"
+      ],
+      "multi": true
+    },
+    "8": {
+      "text": "Have you been seeing a neurologist?",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "multi": false
+    },
+    "9": {
+      "text": "What your last creatinine value?",
+      "options": [],
+      "multi": false
+    },
+    "10": {
+      "text": "Have you been seeing a ophtalmologist?",
+      "options": [],
+      "multi": false
+    },
+    "11": {
+      "text": "Have you been seeing a cradiologist?",
+      "options": [],
+      "multi": false
+    },
+    "12": {
+      "text": "Have you ever suffered from a stroke or heart attack?",
+      "options": [],
+      "multi": false
+    },
+    "13": {
+      "text": "Have you been diagnosed with one or more of the following diseases?",
+      "options": [],
+      "multi": false
+    },
+    "14": {
+      "text": "Do you follow a low sugar diet?",
+      "options": [],
+      "multi": false
+    },
+    "15": {
+      "text": "How many times a week do you exercise for more than 30 minutes?",
+      "options": [],
+      "multi": false
+    }
+  }
+}
